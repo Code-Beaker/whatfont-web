@@ -2,4 +2,6 @@
 Website for the WhatFont browser extension.
 
 > [!WARNING]
-> This is a website that I created while I was bored and is **completely unofficial.**
+> This is just a *demo-like* website. It is not a part of the official browser extension.
+
+
