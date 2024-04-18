@@ -18,6 +18,46 @@ b {
   color: var(--color-primary);
 }
 
+video {
+  margin: 2rem auto;
+  display: block;
+}
+
+.install p,
+details {
+  text-align: left;
+}
+
+summary {
+  font-weight: var(--weight-bol);
+  cursor: pointer;
+  padding: 10px;
+}
+
+details {
+  user-select: none;
+  color: var(--color-dark);
+  font-family: var(--font-main);
+  padding: 10px;
+  border: 1px solid var(--color-dark);
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 0.5em;
+}
+
+.section:nth-child(odd) {
+  color: var(--color-light);
+  background-color: var(--color-dark);
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
 /* Link */
 .link {
   font-weight: var(--weight-bol);
@@ -111,52 +151,48 @@ b {
 /* Sections */
 .section {
   text-align: center;
-  padding: 50px 20px;
+  padding: 10rem 5rem;
 }
 
-video {
-  margin: 30px auto;
-}
-
-.install p,
-details {
+.section {
   text-align: left;
 }
 
-summary {
-  font-weight: var(--weight-bol);
-  cursor: pointer;
-  padding: 10px;
-}
-
-details {
-  user-select: none;
-  color: var(--color-dark);
-  font-family: var(--font-main);
-  padding: 10px;
-  border: 1px solid var(--color-dark);
-  border-radius: 5px;
-  margin: 20px auto;
-}
-
-details[open] summary {
-  border-bottom: 1px solid #aaa;
-  margin-bottom: 0.5em;
-}
-
-.section:nth-child(odd) {
-  color: var(--color-light);
-  background-color: var(--color-dark);
+.section {
+  min-height: 50vh;
 }
 
 .section-title {
-  font-size: 2.25rem;
-  text-align: center;
+  font-size: var(--fs-heading-sm);
+  font-weight: bold;
+  /* margin-bottom: 1rem; */
+  /* text-align: center; */
+}
+
+.section__text-content {
+  padding: 3rem;
+}
+
+.section__cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
 }
 
 .section-text {
-  margin: 20px 50px;
-  font-size: 1.15rem;
+  /* margin: 20px 50px; */
+  margin: 1rem 0;
+  font-size: var(--fs-text);
+}
+
+.section__image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__image {
+  max-width: var(--img-max-width);
 }
 
 /* Button flex */
@@ -169,17 +205,28 @@ details[open] summary {
   align-items: center;
 }
 
-.button {
+.download-btn {
+  display: block;
+  padding: 0.75rem 1.75rem;
+  border-radius: 999px;
+  background-color: var(--chrome-blue-light);
+  margin: 1rem auto;
+  text-align: center;
+  font-weight: var(--weight-bol);
   text-decoration: none;
-  background-color: var(--color-primary);
-  padding: 10px 15px;
-  border-radius: 5px;
   color: var(--color-light);
+  outline-offset: 3px;
+  font-size: var(--fs-text);
   transition: var(--transition-fast);
 }
 
-.button:hover {
-  background-color: var(--color-secondary);
+.download-btn:hover {
+  background-color: var(--chrome-blue-dark);
+  /* text-decoration: underline; */
+}
+
+.download-btn:focus {
+  outline: 3px dotted var(--color-light);
 }
 
 /* Footer */
@@ -244,4 +291,13 @@ details[open] summary {
 .personal-gitlink:hover {
   text-decoration: underline;
   text-decoration-thickness: 2px;
+}
+
+/* for dark color scheme */
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: white;
+    background-color: #101010;
+  }
 }
