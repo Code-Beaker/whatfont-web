@@ -1,9 +1,53 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Inter:wght@400;500;700&display=swap");
+/* Roboto */
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Roboto Slab Variable */
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../fonts/RobotoSlab-VariableFont_wght.ttf") format("ttf"),
+    url("../fonts/RobotoSlab-VariableFont_wght.woff2") format("woff2");
+  font-variation-settings: "wght" 700;
+  font-style: normal;
+}
 
 :root {
-  --font-main: "Inter", sans-serif;
-  --font-heading: "DM Sans", sans-serif;
+  --font-main: "Roboto", sans-serif;
+  --font-heading: "Roboto Slab", serif;
 
+  /* font sizes */
+  --fs-heading-lg: 6rem;
+  --fs-heading-md: 4rem;
+  --fs-heading-sm: 2.75rem;
+
+  --fs-text: 1.125rem;
+
+  /* font weights */
   --weight-reg: 400;
   --weight-med: 500;
   --weight-bol: 700;
@@ -12,6 +56,12 @@
   --color-secondary: #593c8f;
   --color-dark: #171738;
   --color-light: #fff;
+
+  --chrome-blue-light: #1a73e8;
+  --chrome-blue-dark: #1162cc;
+
+  /* image max-widths */
+  --img-max-width: 25rem;
 
   --transition-fast: 150ms ease-in;
 }
