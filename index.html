@@ -11,7 +11,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
   </head>
-  <body onload="loadMessage()">
+  <body>
     <!-- navigation bar -->
     <header class="header">
       <nav class="nav">
@@ -35,12 +35,30 @@
     </header>
     <!-- Main content -->
     <main class="main">
-      <!-- Intro -->
-      <section class="intro">
-        <h1 class="intro-heading">Hey, What's that font?</h1>
+      <!-- hero -->
+      <section class="hero">
+        <div class="hero__cols">
+          <section class="hero__text-content">
+            <h1 class="hero__heading">A new home for the WhatFont extension</h1>
+            <p class="hero__body">
+              A re-designed website for the WhatFont extension built by
+              <a href="#" class="link">Chengyin Liu</a>.
+            </p>
+            <a href="#aboutSection" class="hero__btn">Learn more</a>
+          </section>
+          <section class="hero__image-content">
+            <picture>
+              <img
+                class="hero__image"
+                src="images/undraw_website_setup_re_d4y9.svg"
+                alt="Representative image of a person thinking"
+              />
+            </picture>
+          </section>
+        </div>
       </section>
       <!-- About Section -->
-      <section class="section about">
+      <section id="aboutSection" class="section about">
         <div class="section__cols">
           <section class="section__text-content">
             <h1 class="section-title">Find the font. And more.</h1>
