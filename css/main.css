@@ -231,11 +231,57 @@ details[open] summary {
 
 /* Footer */
 .footer {
-  text-align: center;
-  font-family: var(--font-main);
-  background: var(--color-light);
-  color: var(--color-primary);
-  padding: 10px 30px;
+  padding: 6rem 3rem;
+  background: var(--light-grey);
+}
+
+.footer__cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+}
+
+.footer__links-item-title {
+  font-size: 1.5rem;
+  color: var(--color-dark);
+  margin-bottom: 0.5rem;
+}
+
+.footer__links-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.footer__links-wrapper {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1rem;
+}
+
+.footer__link {
+  text-decoration: none;
+  font-weight: var(--weight-med);
+  color: var(--color-dark);
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__copy {
+  color: var(--color-dark);
+}
+
+.footer__logo {
+  text-decoration: none;
+  display: block;
+}
+
+.footer__logo-caption {
+  margin-top: 0.5rem;
+  color: var(--color-dark);
 }
 
 /* Media Query */

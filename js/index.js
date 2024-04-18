@@ -1,3 +1,5 @@
-function loadMessage() {
-  console.log("Site loaded successfully.");
-}
+const footerYear = document.getElementById("copyrightYear");
+
+let d = new Date();
+
+footerYear.textContent = d.getFullYear();

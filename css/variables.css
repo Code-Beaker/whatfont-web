@@ -51,11 +51,13 @@
   --weight-reg: 400;
   --weight-med: 500;
   --weight-bol: 700;
+  --weight-bolder: 900;
 
   --color-primary: #6e44ff;
   --color-secondary: #593c8f;
   --color-dark: #171738;
   --color-light: #fff;
+  --light-grey: lightgrey;
 
   --chrome-blue-light: #1a73e8;
   --chrome-blue-dark: #1162cc;
