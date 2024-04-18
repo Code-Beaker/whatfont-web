@@ -233,7 +233,7 @@ details[open] summary {
 /* Footer */
 .footer {
   padding: 6rem 3rem;
-  background: var(--light-grey);
+  background: var(--color-dark);
 }
 
 .footer__cols {
@@ -244,7 +244,7 @@ details[open] summary {
 
 .footer__links-item-title {
   font-size: 1.5rem;
-  color: var(--color-dark);
+  color: var(--color-light);
   margin-bottom: 0.5rem;
 }
 
@@ -264,25 +264,27 @@ details[open] summary {
 .footer__link {
   text-decoration: none;
   font-weight: var(--weight-med);
-  color: var(--color-dark);
+  color: var(--color-light);
 }
 
 .footer__link:hover {
+  opacity: 0.85;
   text-decoration: underline;
 }
 
 .footer__copy {
-  color: var(--color-dark);
+  color: var(--color-light);
 }
 
 .footer__logo {
   text-decoration: none;
+  color: var(--color-light);
   display: block;
 }
 
 .footer__logo-caption {
   margin-top: 0.5rem;
-  color: var(--color-dark);
+  color: var(--color-light);
 }
 
 /* Media Query */
@@ -323,10 +325,6 @@ details[open] summary {
   video {
     width: 300px;
   }
-
-  footer {
-    font-size: 0.75rem;
-  }
 }
 
 .personal-gitlink {
@@ -346,5 +344,18 @@ details[open] summary {
   body {
     color: white;
     background-color: #101010;
+  }
+
+  .footer {
+    background-color: var(--light-grey);
+    color: var(--color-dark);
+  }
+
+  .footer__logo,
+  .footer__copy,
+  .footer__logo-caption,
+  .footer__link,
+  .footer__links-item-title {
+    color: var(--color-dark);
   }
 }
