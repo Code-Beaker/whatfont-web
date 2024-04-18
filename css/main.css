@@ -280,6 +280,24 @@ details[open] summary {
   outline: 3px dotted var(--color-light);
 }
 
+/* getting started */
+.installation__cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.installation__item {
+  padding: 1rem;
+  border-radius: 1rem;
+  color: var(--color-light);
+  background-color: var(--chrome-blue-light);
+}
+
+.installation__item-body {
+  margin-top: 0.5rem;
+}
+
 /* Footer */
 .footer {
   padding: 6rem 3rem;
