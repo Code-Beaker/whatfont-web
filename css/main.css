@@ -49,7 +49,7 @@ details[open] summary {
   margin-bottom: 0.5em;
 }
 
-.section:nth-child(odd) {
+.section:nth-child(even) {
   color: var(--color-light);
   background-color: var(--color-dark);
 }
