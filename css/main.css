@@ -122,7 +122,7 @@ details[open] summary {
 
 /* Hero */
 .hero {
-  max-height: 90vh;
+  max-height: fit-content;
   padding: 8rem 5rem;
   background-color: var(--color-light);
 }
