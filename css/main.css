@@ -291,11 +291,21 @@ details[open] summary {
   padding: 1rem;
   border-radius: 1rem;
   color: var(--color-light);
-  background-color: var(--chrome-blue-light);
+  background-color: var(--chrome-blue-dark);
 }
 
 .installation__item-body {
   margin-top: 0.5rem;
+}
+
+.installation__instructions {
+  padding: 1rem 2rem;
+}
+
+.installation__instruction {
+  font-family: var(--font-main);
+  font-weight: var(--weight-med);
+  margin: 1rem;
 }
 
 /* Footer */
