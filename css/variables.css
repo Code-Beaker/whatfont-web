@@ -67,3 +67,14 @@
 
   --transition-fast: 150ms ease-in;
 }
+
+@media (width < 600px) {
+  :root {
+    --fs-heading-lg: 3rem;
+    --fs-heading-md: 2rem;
+    --fs-heading-sm: 1.5rem;
+    --fs-text: 1.1rem;
+
+    --img-max-width: 15rem;
+  }
+}
