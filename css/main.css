@@ -123,7 +123,7 @@ details[open] summary {
 /* Hero */
 .hero {
   max-height: 90vh;
-  padding: 10rem 5rem;
+  padding: 8rem 5rem;
   background-color: var(--color-light);
 }
 
@@ -135,7 +135,7 @@ details[open] summary {
 }
 
 .hero__text-content {
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .hero__heading {
@@ -147,6 +147,12 @@ details[open] summary {
 .hero__body {
   color: var(--color-dark);
   font-size: 1.5rem;
+}
+
+.hero__image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero__image {
