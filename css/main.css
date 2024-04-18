@@ -140,13 +140,13 @@ details[open] summary {
 
 .hero__heading {
   margin-bottom: 1rem;
-  font-size: 2.75rem;
+  font-size: var(--fs-heading-md);
   color: var(--color-dark);
 }
 
 .hero__body {
   color: var(--color-dark);
-  font-size: 1.5rem;
+  font-size: var(--fs-text);
 }
 
 .hero__image-wrapper {
@@ -156,7 +156,7 @@ details[open] summary {
 }
 
 .hero__image {
-  max-width: 27.5rem;
+  max-width: var(--img-max-width);
   animation: autoAnimate 3s ease-in-out 1s infinite alternate both;
 }
 
@@ -365,59 +365,7 @@ details[open] summary {
   color: var(--color-light);
 }
 
-/* Media Query */
-@media (width < 700px) {
-  .nav {
-    height: 200px;
-    flex-direction: column;
-    position: relative;
-  }
-
-  .nav ul {
-    flex-direction: column;
-  }
-
-  .nav-link {
-    display: block;
-    text-align: center;
-  }
-
-  .intro {
-    height: 50vh;
-    padding: 100px 50px;
-  }
-
-  p {
-    font-size: 0.95rem;
-  }
-
-  .intro-heading {
-    font-size: 2.5rem;
-    padding: 10px;
-  }
-
-  .intro-heading::after {
-    font-size: 1.25rem;
-  }
-
-  video {
-    width: 300px;
-  }
-}
-
-.personal-gitlink {
-  text-decoration: none;
-  font-weight: var(--weight-bol);
-  color: var(--color-primary);
-}
-
-.personal-gitlink:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-}
-
 /* for dark color scheme */
-
 @media (prefers-color-scheme: dark) {
   body {
     color: white;
@@ -435,5 +383,73 @@ details[open] summary {
   .footer__link,
   .footer__links-item-title {
     color: var(--color-dark);
+  }
+}
+
+/* for smaller screens */
+@media (width < 600px) {
+  .nav {
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .nav-brand {
+    display: block;
+  }
+
+  .nav__links-wrapper {
+    display: none;
+  }
+
+  .hero {
+    max-height: fit-content;
+    padding: 6rem 3rem;
+  }
+
+  .hero__cols {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__text-content {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .hero__image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section {
+    padding: 4rem 2rem;
+    max-height: fit-content;
+  }
+
+  .section__cols {
+    grid-template-columns: 1fr;
+  }
+
+  .section__text-content {
+    text-align: center;
+  }
+
+  .installation__cols {
+    grid-template-columns: 1fr;
+  }
+
+  .section__video {
+    max-width: 300px;
+  }
+
+  .footer__cols {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .footer__links-cols {
+    grid-template-columns: 1fr;
   }
 }
