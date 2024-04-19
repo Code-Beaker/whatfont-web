@@ -31,10 +31,50 @@
             >
           </li>
         </ul>
+        <button id="navToggler" class="nav__toggle-btn">
+          <img src="images/menu-icon.svg" alt="Menu icon" aria-label="hidden" />
+        </button>
       </nav>
     </header>
     <!-- Main content -->
     <main class="main">
+      <!-- sidebar -->
+      <div id="sidebarMobileNav" class="nav__sidebar">
+        <nav class="sidebar__nav">
+          <ul class="sidebar__links-wrapper">
+            <li class="sidebar__item">
+              <a href="index.html" class="sidebar__link sidebar__active"
+                >Home</a
+              >
+            </li>
+            <li class="sidebar__item">
+              <a href="guide.html" class="sidebar__link">Get Started</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link">Home</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- sidebar -->
+        <div id="sidebarMobileNav" class="nav__sidebar">
+          <nav class="sidebar__nav">
+            <ul class="sidebar__links-wrapper">
+              <li class="sidebar__item">
+                <a href="index.html" class="sidebar__link sidebar__active"
+                  >Home</a
+                >
+              </li>
+              <li class="sidebar__item">
+                <a href="guide.html" class="sidebar__link">Get Started</a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link">Home</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      -->
       <!-- hero -->
       <section class="hero">
         <div class="hero__cols">
@@ -58,7 +98,7 @@
         </div>
       </section>
       <!-- About Section -->
-      <section id="aboutSection" class="section about">
+      <section id="aboutSection" class="section section__about">
         <div class="section__cols">
           <section class="section__text-content">
             <h1 class="section-title">Find the font. And more.</h1>
@@ -83,7 +123,7 @@
         </div>
       </section>
       <!-- Get WhatFont -->
-      <section class="section download">
+      <section class="section section__download">
         <div class="section__cols">
           <section class="section__image-content">
             <picture class="section__image-wrapper"
