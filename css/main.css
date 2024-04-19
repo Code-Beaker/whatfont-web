@@ -227,7 +227,7 @@ details[open] summary {
 
 .hero__heading {
   margin-bottom: 1rem;
-  font-size: var(--fs-heading-md);
+  font-size: var(--fs-hero-lg);
   color: var(--color-dark);
 }
 
@@ -525,6 +525,10 @@ div .footer__cols {
   .hero__text-content {
     text-align: center;
     padding: 1rem;
+  }
+
+  .download-btn {
+    font-weight: var(--weight-med);
   }
 
   .hero__image-wrapper {

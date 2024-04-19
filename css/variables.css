@@ -41,6 +41,7 @@
   --font-heading: "Roboto Slab", serif;
 
   /* font sizes */
+  --fs-hero-lg: 3rem;
   --fs-heading-lg: 6rem;
   --fs-heading-md: 4rem;
   --fs-heading-sm: 2.75rem;
@@ -70,6 +71,7 @@
 
 @media (width < 600px) {
   :root {
+    --fs-hero-lg: 1.5rem;
     --fs-heading-lg: 3rem;
     --fs-heading-md: 2rem;
     --fs-heading-sm: 1.5rem;
