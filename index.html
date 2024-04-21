@@ -12,69 +12,63 @@
     />
   </head>
   <body>
-    <!-- navigation bar -->
+    <!-- ============== -->
+    <!-- NAVIGATION BAR -->
+    <!-- ============== -->
     <header class="header">
       <nav class="nav">
-        <a href="index.html" class="nav-brand">
-          <h1>WhatFont</h1>
+        <a
+          href="index.html"
+          class="nav__logo"
+          aria-label="NavLogo"
+          aria-hidden="false"
+        >
+          <img src="images/logo.png" alt="Logo of WhatFont extension" />
         </a>
-        <ul class="nav__links-wrapper">
-          <li class="nav-item">
-            <a href="index.html" id="active" class="nav-link">Home</a>
+        <ul id="NavBar" class="nav__links-flex">
+          <li class="nav__item">
+            <a
+              href="#"
+              class="nav__link"
+              aria-hidden="false"
+              aria-label="NavigationLink"
+              >Home</a
+            >
           </li>
-          <li class="nav-item">
-            <a href="guide.html" class="nav-link">Getting Started</a>
+          <li class="nav__item">
+            <a
+              href="#"
+              class="nav__link"
+              aria-hidden="false"
+              aria-label="NavigationLink"
+              >Get Started</a
+            >
           </li>
-          <li class="nav-item">
-            <a href="https://www.chengyinliu.com/index.html" class="nav-link"
-              >Chengyin's Page</a
+          <li class="nav__item">
+            <a
+              href="#"
+              class="nav__link"
+              aria-hidden="false"
+              aria-label="NavigationLink"
+              >Chengyin Liu's page</a
             >
           </li>
         </ul>
-        <button id="navToggler" class="nav__toggle-btn">
-          <img src="images/menu-icon.svg" alt="Menu icon" aria-label="hidden" />
+        <button
+          class="nav__toggle"
+          id="NavBarToggle"
+          aria-label="ToggleNavigationMenu"
+          aria-roledescription="Toggle the navigation bar on mobile phones"
+          aria-hidden="false"
+        >
+          <img src="images/menu-icon.svg" alt="" />
         </button>
       </nav>
     </header>
-    <!-- Main content -->
+    <!-- ============ -->
+    <!-- MAIN CONTENT -->
+    <!-- ============ -->
     <main class="main">
-      <!-- sidebar -->
-      <div id="sidebarMobileNav" class="nav__sidebar">
-        <nav class="sidebar__nav">
-          <ul class="sidebar__links-wrapper">
-            <li class="sidebar__item">
-              <a href="index.html" class="sidebar__link sidebar__active"
-                >Home</a
-              >
-            </li>
-            <li class="sidebar__item">
-              <a href="guide.html" class="sidebar__link">Get Started</a>
-            </li>
-            <li class="sidebar__item">
-              <a href="#" class="sidebar__link">Home</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- sidebar -->
-        <div id="sidebarMobileNav" class="nav__sidebar">
-          <nav class="sidebar__nav">
-            <ul class="sidebar__links-wrapper">
-              <li class="sidebar__item">
-                <a href="index.html" class="sidebar__link sidebar__active"
-                  >Home</a
-                >
-              </li>
-              <li class="sidebar__item">
-                <a href="guide.html" class="sidebar__link">Get Started</a>
-              </li>
-              <li class="sidebar__item">
-                <a href="#" class="sidebar__link">Home</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      -->
       <!-- hero -->
       <section class="hero">
         <div class="hero__cols">

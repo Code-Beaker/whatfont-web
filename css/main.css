@@ -73,141 +73,67 @@ details[open] summary {
 .link:hover {
   color: var(--color-secondary);
 }
-
-/* Navigation Bar */
+/* ====================== */
+/* === navigation bar === */
+/* ====================== */
 .nav {
   display: flex;
-  /* flex-direction: row; */
-  justify-content: space-evenly;
-  padding: 1.5rem;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
   max-height: 100px;
-  background-color: var(--color-dark);
+  width: 100%;
+  padding: 1rem 2rem;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9;
+  z-index: 11;
+  background-color: var(--color-dark);
 }
 
-.nav-brand {
-  text-decoration: none;
-  display: block;
-  color: var(--color-light);
-}
-
-.nav-brand:hover {
-  opacity: 0.9;
-}
-
-.nav__links-wrapper {
+.nav__links-flex {
   display: flex;
   list-style: none;
 }
 
-.nav-link {
-  padding: 0.75rem 1.5rem;
-  color: var(--color-light);
-  font-weight: var(--weight-med);
+.nav__link {
+  display: block;
   text-decoration: none;
-  border-radius: 2rem;
-  /* text-transform: uppercase; */
-  margin: 0.5rem;
-  transition: var(--transition-fast);
+  text-underline-offset: 5px;
+  color: var(--light-grey);
+  font-weight: var(--weight-med);
+  padding: 0.75rem 1.5rem;
+  margin: 0.25rem;
 }
 
-#active {
-  color: var(--color-light);
+.nav__link:hover {
   background: var(--color-primary);
-}
-
-.nav-link:hover {
+  border-radius: 0.5rem;
   color: var(--color-light);
-  background: var(--color-primary);
+  text-decoration: underline;
 }
 
-.nav__toggle-btn {
+.nav__toggle {
   display: none;
+  background: none;
   border: none;
   cursor: pointer;
   border-radius: 0.25rem;
-  outline-offset: 3px;
-  background: transparent;
-  transition: 150ms ease-in-out;
+  transition: var(--transition-fast);
 }
 
-.nav__toggle-btn img {
-  width: 30px;
+.nav__toggle img {
   display: block;
-  fill: white;
+  width: 2rem;
 }
 
-.nav__toggle-btn-active {
-  outline: 2px solid var(--light-grey);
+.nav__toggle-focus {
+  outline: 3px solid var(--light-grey);
   rotate: 90deg;
 }
 
-/* sidebar */
-.nav__sidebar {
-  max-height: 100vh;
-  width: 100%;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
-  padding: 10rem 0;
-  position: absolute;
-  background-color: rgba(23, 23, 56, 0.9);
-  backdrop-filter: blur(5px);
-  display: flex;
-  justify-content: stretch;
-  display: none;
-  align-items: start;
-  overflow: hidden;
-  /* vertical-align: top; */
-
-  transform: translateX(100%);
-  transition: 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-.sidebar__show {
-  transform: translateX(0);
-}
-
-.sidebar__nav {
-  position: relative;
-  width: 100%;
-  z-index: 2;
-  padding: 0.5rem;
-}
-
-.sidebar__links-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  list-style: none;
-}
-
-.sidebar__link {
-  display: block;
-  font-weight: var(--weight-med);
-  text-align: center;
-  color: var(--color-light);
-  text-decoration: none;
-  font-size: var(--fs-text);
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.25rem;
-}
-
-.sidebar__link:hover {
-  background-color: var(--color-primary);
-}
-
-.sidebar__active {
-  background-color: var(--color-primary);
-}
-
-/* Hero */
+/* ====================== */
+/* ======== Hero ======== */
+/* ====================== */
 .hero {
   max-height: fit-content;
   padding: 8rem 5rem;
@@ -490,26 +416,32 @@ div .footer__cols {
 
 /* for smaller screens */
 @media (width < 700px) {
-  .nav {
-    justify-content: space-between;
-    align-items: center;
-    max-width: 100%;
-    padding: 1rem 2rem;
-  }
-
-  .nav-brand {
+  .nav__toggle {
     display: block;
   }
 
-  .nav__links-wrapper {
+  .nav__links-flex {
+    flex-direction: column;
+    position: fixed;
+    top: 10%;
+    overflow: hidden;
+    width: 100%;
+    /* border-radius: 0.5rem; */
+    /* margin: 0 0.25rem; */
+    z-index: 10;
+    left: 0;
+    background: rgba(23, 23, 56, 0.8);
+    backdrop-filter: blur(5px);
+    /* height: 0%; */
+    height: fit-content;
     display: none;
+    gap: 1rem;
+    text-align: center;
+    padding: 1rem 0;
+    transition: var(--transition-fast);
   }
 
-  .nav__toggle-btn {
-    display: block;
-  }
-
-  .nav__sidebar {
+  .nav-show {
     display: flex;
   }
 

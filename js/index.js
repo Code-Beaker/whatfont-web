@@ -4,11 +4,10 @@ let d = new Date();
 
 footerYear.textContent = d.getFullYear();
 
-const navToggleBtn = document.getElementById("navToggler");
-const sidebar = document.getElementById("sidebarMobileNav");
+const NavToggleButton = document.getElementById("NavBarToggle");
+const NavigationBar = document.getElementById("NavBar");
 
-navToggleBtn.addEventListener("click", () => {
-  console.log("clicked");
-  navToggleBtn.classList.toggle("nav__toggle-btn-active");
-  sidebar.classList.toggle("sidebar__show");
+NavToggleButton.addEventListener("click", () => {
+  NavToggleButton.classList.toggle("nav__toggle-focus");
+  NavigationBar.classList.toggle("nav-show");
 });
