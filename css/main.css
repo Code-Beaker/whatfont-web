@@ -159,6 +159,7 @@ details[open] summary {
   .nav__links-flex {
     flex-direction: column;
     padding: 2rem 0;
+    gap: 1rem;
   }
 
   .nav__links-flex {
