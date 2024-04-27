@@ -1,9 +1,9 @@
 # WhatFont
 
+Website for the WhatFont browser extension.
+
 > [!WARNING]
 > Project under development. Content to be changed in future.
-
-Website for the WhatFont browser extension.
 
 ## Table of contents
 
