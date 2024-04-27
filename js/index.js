@@ -5,10 +5,10 @@ let d = new Date();
 footerYear.textContent = d.getFullYear();
 
 // Navigation functionality
-const NavbarToggle = document.querySelector("#NavBarToggle");
-const NavBar = document.querySelector("#sidebar");
+const navToggleButton = document.getElementById("navToggleButton");
+const navBarLinks = document.getElementById("navbarLinks");
 
-NavbarToggle.addEventListener("click", function () {
-  NavbarToggle.classList.toggle("nav__toggle-focus");
-  NavBar.classList.toggle("sidebar-show");
+navToggleButton.addEventListener("click", () => {
+  navToggleButton.classList.toggle("nav__toggle-focus");
+  navBarLinks.classList.toggle("nav__links-show");
 });

@@ -17,73 +17,60 @@
     <!-- ============== -->
     <header class="header">
       <nav class="nav">
-        <a
-          href="index.html"
-          class="nav__logo"
-          aria-label="NavLogo"
-          aria-hidden="false"
-        >
-          <img src="images/logo.png" alt="Logo of WhatFont extension" />
-        </a>
-        <ul id="NavBar" class="nav__links-flex">
+        <div class="nav__top">
+          <a
+            href="index.html"
+            class="nav__logo"
+            aria-label="Logo"
+            aria-hidden="false"
+          >
+            <img src="images/logo.png" alt="Logo" class="nav__logo-img" />
+          </a>
+          <button
+            id="navToggleButton"
+            class="nav__toggle"
+            aria-label="NavToggle"
+            aria-hidden="false"
+          >
+            <img src="images/menu-icon.svg" alt="Navigation toggle icon" />
+          </button>
+        </div>
+        <ul id="navbarLinks" class="nav__links-flex">
           <li class="nav__item">
             <a
-              href="#"
-              class="nav__link"
+              href="index.html"
               aria-hidden="false"
-              aria-label="NavigationLink"
+              aria-label="Home"
+              aria-current="page"
+              class="nav__link nav__active"
               >Home</a
             >
           </li>
           <li class="nav__item">
             <a
-              href="#"
-              class="nav__link"
+              href="guide.html"
               aria-hidden="false"
-              aria-label="NavigationLink"
+              aria-label="About"
+              class="nav__link"
               >Get Started</a
             >
           </li>
           <li class="nav__item">
             <a
-              href="#"
-              class="nav__link"
+              href="https://chengyinliu.com/"
               aria-hidden="false"
-              aria-label="NavigationLink"
-              >Chengyin Liu's page</a
+              aria-label="Home"
+              target="_blank"
+              aria-current="page"
+              class="nav__link"
+              >Chengyin Liu's Page</a
             >
           </li>
         </ul>
-        <button
-          class="nav__toggle"
-          id="NavBarToggle"
-          aria-label="ToggleNavigationMenu"
-          aria-roledescription="Toggle the navigation bar on mobile phones"
-          aria-hidden="false"
-        >
-          <img src="images/menu-icon.svg" alt="" />
-        </button>
       </nav>
     </header>
     <!-- MAIN CONTENT -->
-
     <main class="main">
-      <!-- SIDEBAR -->
-      <div id="sidebar" class="sidebar">
-        <nav class="sidebar__nav">
-          <ul class="sidebar__links-wrapper">
-            <li class="sidebar__item">
-              <a href="index.html" class="sidebar__link">Home</a>
-            </li>
-            <li class="sidebar__item">
-              <a href="guide.html" class="sidebar__link">Get Started</a>
-            </li>
-            <li class="sizdebar__item">
-              <a href="index.html" class="sidebar__link">Chengyin Liu's page</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
       <!-- hero -->
       <section class="hero">
         <div class="hero__cols">
