@@ -382,10 +382,11 @@ details[open] summary {
   padding: 6rem 3rem;
   background: var(--color-dark);
 }
-div .footer__cols {
+.footer__cols {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
+  justify-items: center;
 }
 
 .footer__links-item-title {
