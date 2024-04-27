@@ -258,6 +258,13 @@ details[open] summary {
   padding: 10rem 5rem;
 }
 
+@media (width < 700px) {
+  .section {
+    padding: 5rem 2.5rem;
+    max-height: fit-content;
+  }
+}
+
 .section {
   text-align: left;
 }
@@ -485,11 +492,6 @@ details[open] summary {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .section {
-    padding: 4rem 2rem;
-    max-height: fit-content;
   }
 
   .section__cols {
