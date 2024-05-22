@@ -494,7 +494,7 @@ details[open] summary {
 
   .hero__text-content {
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   .hero__image-wrapper {
@@ -530,6 +530,13 @@ details[open] summary {
 
   .footer__links-cols {
     grid-template-columns: 1fr;
+  }
+
+  .download-btn {
+    font-weight: var(--weight-med);
+    gap: 0.75rem;
+    width: 100%;
+    letter-spacing: 0;
   }
 }
 
