@@ -409,6 +409,10 @@ details[open] summary {
   .footer__cols {
     justify-items: start;
   }
+
+  .section__text-content {
+    padding: 1rem;
+  }
 }
 
 .footer__links-item-title {
