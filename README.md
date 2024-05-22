@@ -20,6 +20,7 @@ Website for the WhatFont browser extension.
     - [Tools](#tools)
       - [Testing devices - Smartphones](#testing-devices---smartphones)
     - [Languages](#languages)
+    - [Others](#others)
 
 ## What is WhatFont?
 
@@ -91,3 +92,11 @@ Languages used to build the website
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
+### Others
+
+Images, icons and other resources
+
+- **[Undraw](https://undraw.co)** for illustrations
+- **[Bootstrap Icons](https://icons.getbootstrap.com)** for the icons
+- **[Google Fonts](https://fonts.google.com)** to locally host the fonts
