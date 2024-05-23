@@ -9,7 +9,7 @@ WhatFont lets you inspect the typography of a website and provide information on
 
 - [WhatFont](#whatfont)
   - [Table of contents](#table-of-contents)
-  - [What is WhatFont?](#what-is-whatfont)
+  - [What Can It Do?](#what-can-it-do)
     - [Download for Chrome](#download-for-chrome)
     - [Download for Firefox](#download-for-firefox)
     - [About the website](#about-the-website)
@@ -22,9 +22,11 @@ WhatFont lets you inspect the typography of a website and provide information on
     - [Languages](#languages)
     - [Others](#others)
 
-## What is WhatFont?
-
-It is a browser extension for Chrome and Firefox or browsers based on these. It is an extremely useful extension for web-developers to find what font is used on a website. It is created by Chengyin Liu
+## What Can It Do?
+This extension will let you inspect the fonts used on a website. Not just that,
+- `font-weight` or thickness of the font
+- `font-size` or size of the font
+- `font-style` (italic, oblique, normal, etc.)
 
 ### Download for Chrome
 
@@ -32,11 +34,11 @@ Download the extension for Chrome from the Official [Chrome Webstore](https://ch
 
 ### Download for Firefox
 
-Download add-on from [Mozilla Addons](https://addons.mozilla.org) website.
+Download the add-on from [Mozilla Addons](https://addons.mozilla.org) website.
 
 ### About the website
 
-The website is designed and developed by Tharun Raj(Code-Beaker). It's not official yet.
+The website was designed and developed by Tharun Raj(Code-Beaker). It's not official yet.
 
 > [!NOTE]
 > This is just a _demo-like_ website. It is not a part of the official browser extension.
