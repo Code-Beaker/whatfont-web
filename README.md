@@ -1,9 +1,9 @@
 # WhatFont
 
-Website for the WhatFont browser extension.
+WhatFont lets you inspect the typography of a website and provide information on the different fonts used.
 
 > [!WARNING]
-> Project under development. Content to be changed in future.
+> Project under development. Content to be changed in the future.
 
 ## Table of contents
 
